@@ -1,0 +1,221 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+% !Mode:: "TeX:UTF-8"
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{SUSTechReport}[SUSTech Report]
+
+\RequirePackage{newpxtext,newpxmath}
+\RequirePackage{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{amsmath}
+\RequirePackage{listings}
+\RequirePackage{xeCJK}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{fancyhdr}
+\RequirePackage{lastpage}
+\RequirePackage{booktabs}
+\RequirePackage{parskip}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{inconsolata}
+
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\ProcessOptions\relax
+
+\def\sid#1{\gdef\@sid{#1}}
+\def\@sid{\@latex@error{No \noexpand\sid given}\@ehc}
+
+\def\coursename#1{\gdef\@coursename{#1}}
+\def\@coursename{\@latex@error{No \noexpand\coursename given}\@ehc}
+
+\def\coursecode#1{\gdef\@coursecode{#1}}
+\def\@coursecode{\@latex@error{No \noexpand\coursecode given}\@ehc}
+
+\def\semester#1{\gdef\@semester{#1}}
+\def\@semester{\@latex@error{No \noexpand\semester given}\@ehc}
+
+\def\reportname#1{\gdef\@reportname{#1}}
+\def\@reportname{\@latex@error{No \noexpand\reportname given}\@ehc}
+
+
+\def\univ#1{\gdef\@univ{#1}}
+\def\@univ{\@latex@error{No \noexpand\univ given}\@ehc}
+
+\univ{SUSTech}
+
+\geometry{
+    left=.85in,
+    right=.85in,
+    top=1in,
+    bottom=.8in,
+    bindingoffset=.15in
+}
+
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{1.1}
+
+\newcommand{\mktitle}{
+  \par
+  \begingroup
+    \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+    \renewcommand{\@makefnmark}{\hbox to \z@{$^{\@thefnmark}$\hss}}
+    \long\def\@makefntext##1{%
+      \parindent 1em\noindent
+      \hbox to 1.8em{\hss $\m@th ^{\@thefnmark}$}##1
+    }
+    \thispagestyle{empty}
+
+    \vbox{%
+    \par \vspace{.5in}
+    \hsize\textwidth
+    \linewidth\hsize
+    \linespread{0.7} \selectfont
+    \@toptitlebar
+    \centering
+    {\LARGE\bf \linespread{1.1} \selectfont \@title\par}
+    \@bottomtitlebar
+    }
+    \paragraph{Name}何泽安 (He Zean)
+    \vspace{-1.3em}
+    \paragraph{SID}\hspace{.72em} \# 12011323
+    \vskip 0.3in
+
+    \par \vspace{1.5in}
+    \begin{center}
+      \setlength{\parskip}{1em}
+      \vspace{1.2em}
+        \par \MakeUppercase{\@coursecode \quad \@coursename}
+        \par \MakeUppercase{\@semester}
+        \par \MakeUppercase{\@reportname}
+        \par \quad
+        \footnotesize
+        \par \uppercase{Southern University of Science and Technology}
+        \vspace{-1.2em}
+        \par \uppercase{Dept. of Computer Science and Engineering}
+        \normalsize
+        \par \vspace{1.5em}
+        \includegraphics[scale = 0.07]{sustech-logo-s}
+    \end{center}
+    \clearpage
+    \@thanks
+  \endgroup
+  \let\maketitle\relax
+  \let\thanks\relax
+}
+
+\newcommand{\toc}{
+    \maketitle
+    \setcounter{page}{1}
+    \pagenumbering{Roman}
+    \tableofcontents
+    \newpage
+    \setcounter{page}{1}
+    \pagenumbering{arabic}
+    \pagestyle{plain}
+}
+
+\newcommand{\bibref}[1]{
+    \pagebreak
+    \bibliographystyle{IEEEtran}
+    \bibliography{#1}
+    \noindent \scriptsize Disclaimer: All references used in this project are only for the purpose of guiding the direction of exploration and ensuring correctness, any code appearing in the referenced web pages has not been used directly, unless explicitly stated. 
+}
+
+\if@twocolumn
+	\renewcommand{\maketitle}{\twocolumn[\mktitle]}
+\else
+	\renewcommand{\maketitle}{\mktitle}
+\fi
+
+% tex settings moved here %
+
+\usepackage{listings}
+\usepackage{blindtext}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\usepackage{pifont}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{cite}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{algorithm}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+
+
+\setmonofont[Mapping={}]{Monaco}
+
+\newcommand{\@toptitlebar}{
+  \hrule height 4\p@
+  \vskip 0.25in
+  \vskip -\parskip%
+}
+\newcommand{\@bottomtitlebar}{
+  \vskip 0.29in
+  \vskip -\parskip
+  \hrule height 1\p@
+  \vskip 0.09in%
+}
+
+\urlstyle{
+colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+  basicstyle=\footnotesize\ttfamily,       % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
+                                  % will be numbered
+  numbersep=15pt,                  % how far the line-numbers are from the code
+  framexleftmargin=5pt,
+  framexrightmargin=5pt,
+  backgroundcolor=\color[RGB]{245,245,244},   %代码背景色
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=4,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{blue},      % keyword style
+  commentstyle=\color{dkgreen},   % comment style
+  stringstyle=\color{mauve},      % string literal style
+  escapeinside={\%*}{*)},         % if you want to add LaTeX within your code
+  morekeywords={*,alignas,continute,friend,register,true,alignof,decltype,goto,
+    reinterpret_cast,try,asm,defult,if,return,typedef,auto,delete,inline,short,
+    typeid,bool,do,int,signed,typename,break,double,long,sizeof,union,case,
+    dynamic_cast,mutable,static,unsigned,catch,else,namespace,static_assert,using,
+    char,enum,new,static_cast,virtual,char16_t,char32_t,explict,noexcept,struct,
+    void,export,nullptr,switch,volatile,class,extern,operator,template,wchar_t,
+    const,false,private,this,while,constexpr,float,protected,thread_local,
+    const_cast,for,public,throw,std},
+    emph={map,set,multimap,multiset,unordered_map,unordered_set,
+    unordered_multiset,unordered_multimap,vector,string,list,deque,
+    array,stack,forwared_list,iostream,memory,shared_ptr,unique_ptr,
+    random,bitset,ostream,istream,cout,cin,endl,move,default_random_engine,
+    uniform_int_distribution,iterator,algorithm,functional,bing,numeric,}
+}
+% end tex settings %

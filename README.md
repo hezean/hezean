@@ -1,16 +1,25 @@
-### Hi there 👋
+# Hi there :sparkles:
 
-<!--
-**HeZean/HeZean** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+![GitHub last commit](https://img.shields.io/github/last-commit/hezean/hezean) &nbsp;
+![Profile Views](https://komarev.com/ghpvc/?username=HeZean) &nbsp;
+[![Gmail](https://img.shields.io/badge/-realhezean@gmail.com-4486c2?style=flat&logo=Gmail&logoColor=white&link=mailto:realhezean@gmail.com)](mailto:realhezean@gmail.com)
+![](https://hit.yhype.me/github/profile?user_id=49837965)
 
-Here are some ideas to get you started:
+Here's Chris, a UG :octocat: in SUSTech.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+ 
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HeZean&layout=compact" height = "170" align=center /> &nbsp;&nbsp; 
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=HeZean" height = "170" align=center />
+
+
+<details>
+  <summary>Tech Stack</summary>
+  <br>
+<pre>
+
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-plain.svg" height=30> &nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-plain.svg" height=30> &nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" height=30> &nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original-wordmark.svg" height=30> &nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-plain.svg" height=30> &nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" height=30>
+
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-plain-wordmark.svg" height=30> &nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-plain.svg" height=30> &nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-plain.svg" height=30> &nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" height=30>
+
+</pre>
+</details>
