@@ -5,12 +5,14 @@
 [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FrealChrisDevwv)](https://twitter.com/realChrisDevwv)
 ![](https://hit.yhype.me/github/profile?user_id=49837965)
 
-Here's Chris, a UG :octocat: in SUSTech.
+It's Chris, currently a UG :octocat: in SUSTech.
 
  
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HeZean&layout=compact" height = "170" align=center /> &nbsp;&nbsp; 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=HeZean" height = "170" align=center />
 
+
+<!--
 
 <details>
   <summary>Tech Stack</summary>
@@ -23,3 +25,5 @@ Here's Chris, a UG :octocat: in SUSTech.
 
 </pre>
 </details>
+
+-->
