@@ -1,13 +1,12 @@
 # Hi there :sparkles:
 
-![Alive](https://img.shields.io/badge/alive-true-brightgreen)
+![Everything sucks](https://img.shields.io/badge/feeling-awful-red)
 [![Gmail](https://img.shields.io/badge/-realhezean@gmail.com-4486c2?style=flat&logo=Gmail&logoColor=white&link=mailto:realhezean@gmail.com)](mailto:realhezean@gmail.com)
 [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FrealChrisDevwv)](https://twitter.com/realChrisDevwv)
 ![](https://hit.yhype.me/github/profile?user_id=49837965)
 
-It's Chris, currently a UG :octocat: in SUSTech.
+It's Chris, currently a UG :octocat: in ~SUSTC~.  <!-- SUSTech 是我见过的最垃圾的学校，其中计系更是学校里最不入流的存在，完全不知道这种三本水平的系有什么存在的意义，再过一年就润了，再您妈的鬼见 -->
 
- 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HeZean&layout=compact" height = "170" align=center /> &nbsp;&nbsp; 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=HeZean" height = "170" align=center />
 
