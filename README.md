@@ -7,7 +7,7 @@
 
 It's Chris, currently a UG :octocat: in ~SUSTC~.  <!-- SUSTech 是我见过的最垃圾的学校，其中计系更是学校里最不入流的存在，完全不知道这种三本水平的系有什么存在的意义，再过一年就润了，再您妈的鬼见 -->
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HeZean&layout=compact" height = "170" align=center /> &nbsp;&nbsp; 
+<img src="https://github-readme-stats-ten-gilt.vercel.app/api/top-langs/?username=HeZean&layout=compact" height = "170" align=center /> &nbsp;&nbsp; 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=HeZean" height = "170" align=center />
 
 
